@@ -46,6 +46,7 @@ fun SimpleRecyclerView() {
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun SimpleRecyclerStickyView() {
+
     val context = LocalContext.current
     val superHero = getSuperHero().groupBy { it.publisher }
     LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
